@@ -226,6 +226,11 @@ else {
 alert(n);
 //Task 05
 //Task 06
+var minutes = 60 * 1000;
+var date = new Date();
+var mili = date.getTime();
+var min = mili/minutes;
+document.write(`Current Date: ${date}<br>Elapsed miliseconds since Jan 01,1970: ${mili}<br>Elapsed minutes since Jan 01,1970: ${minutes}`);
 //Task 07
 var hours = new Date().getHours();
 var hours = (hours+24-2)%24; 
